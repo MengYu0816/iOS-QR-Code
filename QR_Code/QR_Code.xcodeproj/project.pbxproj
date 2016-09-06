@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9054F441D7811C0000928AC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9054F431D7811C0000928AC /* CoreImage.framework */; };
+		B9054F4A1D781373000928AC /* Generate_QR_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = B9054F491D781373000928AC /* Generate_QR_Code.m */; };
+		B9054F4D1D78156B000928AC /* Fetch_QR_code.m in Sources */ = {isa = PBXBuildFile; fileRef = B9054F4C1D78156B000928AC /* Fetch_QR_code.m */; };
 		B975E7A71D751BB7001FA9B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B975E7A61D751BB7001FA9B1 /* main.m */; };
 		B975E7AA1D751BB7001FA9B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B975E7A91D751BB7001FA9B1 /* AppDelegate.m */; };
 		B975E7AD1D751BB7001FA9B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B975E7AC1D751BB7001FA9B1 /* ViewController.m */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9054F431D7811C0000928AC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B9054F481D781373000928AC /* Generate_QR_Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Generate_QR_Code.h; path = Generate/Generate_QR_Code.h; sourceTree = "<group>"; };
+		B9054F491D781373000928AC /* Generate_QR_Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generate_QR_Code.m; path = Generate/Generate_QR_Code.m; sourceTree = "<group>"; };
+		B9054F4B1D78156B000928AC /* Fetch_QR_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fetch_QR_code.h; path = Fetch/Fetch_QR_code.h; sourceTree = "<group>"; };
+		B9054F4C1D78156B000928AC /* Fetch_QR_code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fetch_QR_code.m; path = Fetch/Fetch_QR_code.m; sourceTree = "<group>"; };
 		B975E7A21D751BB7001FA9B1 /* QR_Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QR_Code.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B975E7A61D751BB7001FA9B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B975E7A81D751BB7001FA9B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9054F441D7811C0000928AC /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +87,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9054F451D7811F4000928AC /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B9054F431D7811C0000928AC /* CoreImage.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		B9054F461D7812FE000928AC /* Fetch */ = {
+			isa = PBXGroup;
+			children = (
+				B9054F4B1D78156B000928AC /* Fetch_QR_code.h */,
+				B9054F4C1D78156B000928AC /* Fetch_QR_code.m */,
+			);
+			name = Fetch;
+			sourceTree = "<group>";
+		};
+		B9054F471D78130E000928AC /* Generate */ = {
+			isa = PBXGroup;
+			children = (
+				B9054F481D781373000928AC /* Generate_QR_Code.h */,
+				B9054F491D781373000928AC /* Generate_QR_Code.m */,
+			);
+			name = Generate;
+			sourceTree = "<group>";
+		};
 		B975E7991D751BB7001FA9B1 = {
 			isa = PBXGroup;
 			children = (
 				B975E7A41D751BB7001FA9B1 /* QR_Code */,
+				B9054F451D7811F4000928AC /* Framework */,
 				B975E7BE1D751BB7001FA9B1 /* QR_CodeTests */,
 				B975E7C91D751BB8001FA9B1 /* QR_CodeUITests */,
 				B975E7A31D751BB7001FA9B1 /* Products */,
@@ -101,6 +137,8 @@
 		B975E7A41D751BB7001FA9B1 /* QR_Code */ = {
 			isa = PBXGroup;
 			children = (
+				B9054F471D78130E000928AC /* Generate */,
+				B9054F461D7812FE000928AC /* Fetch */,
 				B975E7A81D751BB7001FA9B1 /* AppDelegate.h */,
 				B975E7A91D751BB7001FA9B1 /* AppDelegate.m */,
 				B975E7AB1D751BB7001FA9B1 /* ViewController.h */,
@@ -270,9 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9054F4A1D781373000928AC /* Generate_QR_Code.m in Sources */,
 				B975E7AD1D751BB7001FA9B1 /* ViewController.m in Sources */,
 				B975E7AA1D751BB7001FA9B1 /* AppDelegate.m in Sources */,
 				B975E7A71D751BB7001FA9B1 /* main.m in Sources */,
+				B9054F4D1D78156B000928AC /* Fetch_QR_code.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +455,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QR_Code/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.developer.MengYu.QR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +469,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QR_Code/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.developer.MengYu.QR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +544,7 @@
 				B975E7D11D751BB8001FA9B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B975E7D21D751BB8001FA9B1 /* Build configuration list for PBXNativeTarget "QR_CodeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +553,7 @@
 				B975E7D41D751BB8001FA9B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B975E7D51D751BB8001FA9B1 /* Build configuration list for PBXNativeTarget "QR_CodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +562,7 @@
 				B975E7D71D751BB8001FA9B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

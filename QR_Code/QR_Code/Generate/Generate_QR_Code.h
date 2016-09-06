@@ -10,4 +10,6 @@
 
 @interface Generate_QR_Code : UIImage
 
+- (UIImage *)generateString:(NSString *)str size:(CGSize)size interpolate:(BOOL)interpolate;
+
 @end
