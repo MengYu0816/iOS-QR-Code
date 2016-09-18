@@ -10,6 +10,7 @@
 		B9054F441D7811C0000928AC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9054F431D7811C0000928AC /* CoreImage.framework */; };
 		B9054F4A1D781373000928AC /* Generate_QR_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = B9054F491D781373000928AC /* Generate_QR_Code.m */; };
 		B9054F4D1D78156B000928AC /* Fetch_QR_code.m in Sources */ = {isa = PBXBuildFile; fileRef = B9054F4C1D78156B000928AC /* Fetch_QR_code.m */; };
+		B9279F561D8E80A400D03035 /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9279F551D8E80A400D03035 /* CustomIOSAlertView.m */; };
 		B975E7A71D751BB7001FA9B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B975E7A61D751BB7001FA9B1 /* main.m */; };
 		B975E7AA1D751BB7001FA9B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B975E7A91D751BB7001FA9B1 /* AppDelegate.m */; };
 		B975E7AD1D751BB7001FA9B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B975E7AC1D751BB7001FA9B1 /* ViewController.m */; };
@@ -43,6 +44,9 @@
 		B9054F491D781373000928AC /* Generate_QR_Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generate_QR_Code.m; path = Generate/Generate_QR_Code.m; sourceTree = "<group>"; };
 		B9054F4B1D78156B000928AC /* Fetch_QR_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fetch_QR_code.h; path = Fetch/Fetch_QR_code.h; sourceTree = "<group>"; };
 		B9054F4C1D78156B000928AC /* Fetch_QR_code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fetch_QR_code.m; path = Fetch/Fetch_QR_code.m; sourceTree = "<group>"; };
+		B91B10571D86534C0093FDDD /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		B9279F541D8E80A400D03035 /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomIOSAlertView.h; path = ThirdLibs/CustomIOSAlertView.h; sourceTree = "<group>"; };
+		B9279F551D8E80A400D03035 /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomIOSAlertView.m; path = ThirdLibs/CustomIOSAlertView.m; sourceTree = "<group>"; };
 		B975E7A21D751BB7001FA9B1 /* QR_Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QR_Code.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B975E7A61D751BB7001FA9B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B975E7A81D751BB7001FA9B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 			name = Generate;
 			sourceTree = "<group>";
 		};
+		B9279F531D8E803D00D03035 /* ThirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+				B9279F541D8E80A400D03035 /* CustomIOSAlertView.h */,
+				B9279F551D8E80A400D03035 /* CustomIOSAlertView.m */,
+			);
+			name = ThirdLibs;
+			sourceTree = "<group>";
+		};
 		B975E7991D751BB7001FA9B1 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +152,7 @@
 			children = (
 				B9054F471D78130E000928AC /* Generate */,
 				B9054F461D7812FE000928AC /* Fetch */,
+				B91B10571D86534C0093FDDD /* GlobalDefine.h */,
 				B975E7A81D751BB7001FA9B1 /* AppDelegate.h */,
 				B975E7A91D751BB7001FA9B1 /* AppDelegate.m */,
 				B975E7AB1D751BB7001FA9B1 /* ViewController.h */,
@@ -155,6 +169,7 @@
 		B975E7A51D751BB7001FA9B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9279F531D8E803D00D03035 /* ThirdLibs */,
 				B975E7A61D751BB7001FA9B1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -310,6 +325,7 @@
 			files = (
 				B9054F4A1D781373000928AC /* Generate_QR_Code.m in Sources */,
 				B975E7AD1D751BB7001FA9B1 /* ViewController.m in Sources */,
+				B9279F561D8E80A400D03035 /* CustomIOSAlertView.m in Sources */,
 				B975E7AA1D751BB7001FA9B1 /* AppDelegate.m in Sources */,
 				B975E7A71D751BB7001FA9B1 /* main.m in Sources */,
 				B9054F4D1D78156B000928AC /* Fetch_QR_code.m in Sources */,
