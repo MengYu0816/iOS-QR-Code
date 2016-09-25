@@ -10,6 +10,7 @@
 #import "GlobalDefine.h"
 #import "Generate/Generate_QR_Code.h"
 #import "CustomIOSAlertView.h"
+#import "FetchViewController.h"
 
 @interface ViewController ()<UIAlertViewDelegate, CustomIOSAlertViewDelegate>
 
@@ -91,15 +92,8 @@
                            animated:YES
                          completion:nil];
     } else {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Fetch Code"
-                                                                       message:@" "
-                                                                preferredStyle:UIAlertControllerStyleAlert];
-        [alert addAction:[UIAlertAction actionWithTitle:@"Cancel"
-                                                  style:UIAlertActionStyleCancel
-                                                handler:^(UIAlertAction * _Nonnull action) {
-                                                    
-                                                }]];
-        [self presentViewController:alert
+        FetchViewController *fetchView = [[FetchViewController alloc] init];
+        [self presentViewController:fetchView
                            animated:YES
                          completion:nil];
     }

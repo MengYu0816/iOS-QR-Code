@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DE40FD31D901A3800FBFA26 /* FetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE40FD21D901A3800FBFA26 /* FetchViewController.m */; };
 		B9054F441D7811C0000928AC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9054F431D7811C0000928AC /* CoreImage.framework */; };
 		B9054F4A1D781373000928AC /* Generate_QR_Code.m in Sources */ = {isa = PBXBuildFile; fileRef = B9054F491D781373000928AC /* Generate_QR_Code.m */; };
 		B9054F4D1D78156B000928AC /* Fetch_QR_code.m in Sources */ = {isa = PBXBuildFile; fileRef = B9054F4C1D78156B000928AC /* Fetch_QR_code.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6DE40FD11D901A3800FBFA26 /* FetchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FetchViewController.h; path = Fetch/FetchViewController.h; sourceTree = "<group>"; };
+		6DE40FD21D901A3800FBFA26 /* FetchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FetchViewController.m; path = Fetch/FetchViewController.m; sourceTree = "<group>"; };
 		B9054F431D7811C0000928AC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		B9054F481D781373000928AC /* Generate_QR_Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Generate_QR_Code.h; path = Generate/Generate_QR_Code.h; sourceTree = "<group>"; };
 		B9054F491D781373000928AC /* Generate_QR_Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generate_QR_Code.m; path = Generate/Generate_QR_Code.m; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 			children = (
 				B9054F4B1D78156B000928AC /* Fetch_QR_code.h */,
 				B9054F4C1D78156B000928AC /* Fetch_QR_code.m */,
+				6DE40FD11D901A3800FBFA26 /* FetchViewController.h */,
+				6DE40FD21D901A3800FBFA26 /* FetchViewController.m */,
 			);
 			name = Fetch;
 			sourceTree = "<group>";
@@ -255,11 +260,12 @@
 		B975E79A1D751BB7001FA9B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = MengYu;
 				TargetAttributes = {
 					B975E7A11D751BB7001FA9B1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C65X67CW5H;
 					};
 					B975E7BA1D751BB7001FA9B1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -267,6 +273,7 @@
 					};
 					B975E7C51D751BB7001FA9B1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C65X67CW5H;
 						TestTargetID = B975E7A11D751BB7001FA9B1;
 					};
 				};
@@ -323,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE40FD31D901A3800FBFA26 /* FetchViewController.m in Sources */,
 				B9054F4A1D781373000928AC /* Generate_QR_Code.m in Sources */,
 				B975E7AD1D751BB7001FA9B1 /* ViewController.m in Sources */,
 				B9279F561D8E80A400D03035 /* CustomIOSAlertView.m in Sources */,
@@ -397,8 +405,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -442,8 +452,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -473,6 +485,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C65X67CW5H;
 				INFOPLIST_FILE = QR_Code/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.developer.MengYu.QR-Code";
@@ -487,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C65X67CW5H;
 				INFOPLIST_FILE = QR_Code/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.developer.MengYu.QR-Code";
@@ -522,6 +536,7 @@
 		B975E7D61D751BB8001FA9B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = C65X67CW5H;
 				INFOPLIST_FILE = QR_CodeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.developer.MengYu.QR-CodeUITests";
@@ -533,6 +548,7 @@
 		B975E7D71D751BB8001FA9B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = C65X67CW5H;
 				INFOPLIST_FILE = QR_CodeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.developer.MengYu.QR-CodeUITests";

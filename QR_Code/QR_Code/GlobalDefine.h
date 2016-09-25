@@ -32,5 +32,6 @@
 //判断 iOS 8 或更高的系统版本
 #define IOS_VERSION_8_OR_LATER (([[[UIDevice currentDevice] systemVersion] floatValue] >=8.0)? (YES):(NO))
 
+#define NOTIFICATION_FETCH_STRING   @"notification_fetch_string"
 
 #endif /* GlobalDefine_h */
